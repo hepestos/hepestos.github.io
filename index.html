@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .logo {
+            margin-bottom: 40px;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-style: italic;
+            font-weight: 900;
+            color: #00ff88;
+            text-align: center;
+            background-color: #222;
+            padding: 15px 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            width: 100%;
+        }
+
+        .box {
+            background-color: #00ff88;
+            color: #1a1a1a;
+            padding: 50px;
+            text-align: center;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(0, 255, 136, 0.4);
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 255, 136, 0.6);
+        }
+
+        .box a {
+            text-decoration: none;
+            color: inherit;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .box {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">Droit-Easy</div>
+
+    <div class="container">
+        <div class="box"><a href="droit.html">Droit</a></div>
+        <div class="box"><a href="science-politique.html">Science Politique</a></div>
+    </div>
+</body>
+</html>

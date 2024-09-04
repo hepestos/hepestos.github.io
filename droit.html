@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Barlow Condensed', sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .logo {
+            margin-bottom: 40px;
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-style: italic;
+            font-weight: 900;
+            color: #00ff88;
+            text-align: center;
+            background-color: #222;
+            padding: 15px 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        .flags-container {
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+        }
+        .flag {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .flag:hover {
+            transform: scale(1.1);
+        }
+        .flag img {
+            width: 150px;
+            height: 100px;
+        }
+        .flag-label {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">Droit-Easy</div>
+
+    <div class="flags-container">
+        <div class="flag" onclick="window.location.href='france-droit.html'">
+            <img src="france-flag.png" alt="France">
+            <div class="flag-label">France</div>
+        </div>
+        <div class="flag" onclick="window.location.href='tunisie-droit.html'">
+            <img src="tunisie-flag.png" alt="Tunisie">
+            <div class="flag-label">Tunisie</div>
+        </div>
+    </div>
+</body>
+</html>
